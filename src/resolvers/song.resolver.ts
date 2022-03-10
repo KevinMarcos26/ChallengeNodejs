@@ -154,7 +154,7 @@ export class SongResolver {
                 _input['artist'] = await this.artistRepository.findOne(input.artist);
             }
 
-            return _input;
+            return _input
         } catch (e) {
             throw new Error(e);
         }
